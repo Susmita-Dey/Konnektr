@@ -1,6 +1,5 @@
 import React from "react";
 import MessageComponent from "./MessageComponent";
-import MessageInputComponent from "./MessageInputComponent";
 import MessageNav from "./MessageNav";
 
 export default function MessageArea() {
@@ -9,7 +8,6 @@ export default function MessageArea() {
             <div className="flex flex-col justify-between items-center gap-4">
                 <MessageNav />
                 <MessageComponent />
-                <MessageInputComponent />
             </div>
         </div>
     )

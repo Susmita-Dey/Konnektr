@@ -5,10 +5,12 @@ import { FaVideo } from "react-icons/fa"
 import CallModal from "./CallModal";
 
 export default function MessageNav() {
-    const [show, setShow] = useState(false);
+    const [isShown, setIsShown] = useState(false);
+    const handleClick = () => {
+        // toggle shown state
+        setIsShown(current => !current);
+    };
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
     return (
         <div className="container mx-auto text-[#436475]">
             <div className="flex flex-row justify-between px-4 py-6 rounded-xl shadow-lg">
@@ -17,11 +19,11 @@ export default function MessageNav() {
                     <h3 className="text-xl font-semibold">Shivrajjj</h3>
                 </div>
                 <div className="flex gap-6 justify-center items-center">
-                    <FiPhoneCall className="text-2xl cursor-pointer" onClick={handleShow} />
-                    <FaVideo className="text-2xl" />
+                    <FiPhoneCall className="text-2xl cursor-pointer" onClick={handleClick} />
+                    <FaVideo className="text-2xl cursor-pointer" onClick={handleClick} />
                 </div>
             </div>
-            <CallModal show={show} onHide={handleClose}></CallModal>
+            {isShown && <CallModal />}
         </div>
     )
 }
