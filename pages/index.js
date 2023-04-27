@@ -1,11 +1,15 @@
+import MessageArea from '@/components/MessageArea'
+import RightSidebar from '@/components/RightSidebar'
 import SideNavbar from '@/components/SideNavbar'
 
 export default function Home() {
   return (
-    // <main
-    //   className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    // >
-    // </main>
-    <SideNavbar />
+    <main
+      className="flex min-h-screen flex-row items-center justify-between"
+    >
+      <SideNavbar />
+      <MessageArea />
+      <RightSidebar />
+    </main>
   )
 }
