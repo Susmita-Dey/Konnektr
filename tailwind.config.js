@@ -9,10 +9,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      'primary-text': '#436475'
+    extend: {
+      backgroundImage: {
+        'hero-bg': "url('/public/ChatBg.png')",
+      }
     },
-    extend: {},
   },
   plugins: [],
 }

@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 export default function SideNavbar() {
     return (
-        <div className="min-h-screen flex flex-row text-primary-text font-medium">
+        <div className="h-screen flex flex-row text-[#436475] font-medium">
             <div className="flex flex-col justify-between items-center w-64 bg-white rounded-r-3xl overflow-hidden">
                 <div className="flex items-center justify-center h-20">
                     <Link href='/' className="text-2xl font-semibold uppercase">Konnektr</Link>
