@@ -3,6 +3,8 @@ import React from "react";
 import { RxCross1 } from 'react-icons/rx'
 import { IoIosCall } from "react-icons/io"
 import { FaVideo } from "react-icons/fa"
+import { MdCallEnd } from "react-icons/md"
+import { MdKeyboardVoice } from "react-icons/md"
 
 export default function CallModal() {
     if (typeof window !== "undefined") {
